@@ -1,10 +1,10 @@
 {
-  "full_name": "Simon Dirmeier",
-  "email": "sfyrbnd @ pm me",
-  "github_username": "dirmeier",
+  "full_name": "First Name and Last Name",
+  "email": "some.mail@theweb.com",
+  "github_username": "githandle",
   "project_readme_title": "UV app template",
   "project_short_description": "Sentence that is used as description in project.toml",
-  "project_slug": "Something like 'rap'",
+  "project_slug": "Something short like 'jax'",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.0.1",
   "_copy_without_render": [
