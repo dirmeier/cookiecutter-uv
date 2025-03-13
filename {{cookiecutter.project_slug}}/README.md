@@ -19,12 +19,30 @@ TODO
 
 ## Installation
 
-To install the latest GitHub <RELEASE>, just call the following on the
-command line:
+To install the package from PyPi, call:
+
+```bash
+pip install {{ cookiecutter.project_slug }}
+```
+
+To install the latest GitHub <RELEASE>, just call the following on the command line:
 
 ```bash
 pip install git+https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}@<RELEASE>
 ```
+
+Please do not directly install from the `main` branch, since these commits are not tested, but prefer using PyPI or a stable release.
+
+## Contributing
+
+Contributions in the form of pull requests are more than welcome. In order to contribute:
+
+1) Clone Ramsey and install  `uv` from [here](https://github.com/astral-sh/uv),
+2) create a new branch locally `git checkout -b feature/my-new-feature` or `git checkout -b issue/fixes-bug`,
+3) install all dependencies via `uv sync --all-extras`,
+4) implement your contribution and ideally a test case,
+5) test it by calling `make format`, `make lints` and `make tests` on the (Unix) command line,
+6) submit a PR 🙂
 
 ## Author
 
