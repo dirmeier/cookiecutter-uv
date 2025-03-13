@@ -16,7 +16,7 @@ This repository implements a template for a minimal Python package that uses `uv
     cookiecutter gh:dirmeier/cookiecutter-uv
     ```
 
-2) After having created a project, install all dependencies using `uv`(https://github.com/astral-sh/uv):
+2) After having created a project, install all dependencies using [`uv`](https://github.com/astral-sh/uv):
 
     ```shell
     uv sync --all-extras
@@ -29,14 +29,16 @@ This repository implements a template for a minimal Python package that uses `uv
    git remote add origin git git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.git
    ```
 
-4) Install `pre-commit` and `gitlint` via:
+4) Setup [Codecov](https://about.codecov.io/) and [Codacy](https://www.codacy.com/), or your preferred code coverage and code quality tools.
+   Fix the respective links in the header of `README.md`.
+5) Install `pre-commit` and `gitlint` via:
 
    ```shell
    pre-commit install
    gitlint install-hook
    ``` 
 
-5) Create a new branch for development via:
+6) Create a new branch for development via:
 
     ```shell
    git checkout -b my-new-feature
@@ -51,8 +53,8 @@ This repository implements a template for a minimal Python package that uses `uv
    make docs
    ```
 
-8) Commit your changes using a informative commit message. Read [this](https://cbea.ms/git-commit/) for help.
-9) Push your changes to your feature-branch and create a pull-request.
+8) Commit your changes using an informative commit message. Read [this](https://cbea.ms/git-commit/) for help.
+9) Push your changes to your feature branch and create a pull request.
 10) Squash-merge your changes onto main or, ideally, clean up your commit history and rebase onto main.
 11) Don't forget to create tags and releases.
 

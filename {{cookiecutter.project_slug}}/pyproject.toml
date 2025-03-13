@@ -62,9 +62,10 @@ convention= 'google'
 [tool.uv]
 upgrade-package = ["jax", "jaxlib"]
 dev-dependencies = [
+    "gitlint",
+    "jupyter",
     "pre-commit",
-    "ruff",
     "pytest>=7.2.0",
     "pytest-cov>=4.0.0",
-    "jupyter"
+    "ruff",
 ]
