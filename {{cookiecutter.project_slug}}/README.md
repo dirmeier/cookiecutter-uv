@@ -37,7 +37,7 @@ Please do not directly install from the `main` branch, since these commits are n
 
 Contributions in the form of pull requests are more than welcome. In order to contribute:
 
-1) Clone Ramsey and install  `uv` from [here](https://github.com/astral-sh/uv),
+1) Clone {{ cookiecutter.project_slug }} and install  `uv` from [here](https://github.com/astral-sh/uv),
 2) create a new branch locally `git checkout -b feature/my-new-feature` or `git checkout -b issue/fixes-bug`,
 3) install all dependencies via `uv sync --all-extras`,
 4) implement your contribution and ideally a test case,
