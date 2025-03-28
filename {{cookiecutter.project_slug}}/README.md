@@ -15,7 +15,6 @@ TODO
 
 ## Example usage
 
-TODO
 
 ## Installation
 
