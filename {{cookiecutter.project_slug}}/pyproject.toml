@@ -19,11 +19,22 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dependencies = [
+    "jax-ai-stack",
 ]
 dynamic = ["version"]
 
 [project.optional-dependencies]
 all = []
+
+[dependency-groups]
+dev = [
+    "gitlint",
+    "jupyter",
+    "pre-commit",
+    "pytest>=7.2.0",
+    "pytest-cov>=4.0.0",
+    "ruff",
+]
 
 [project.urls]
 Documentation = "https://{{cookiecutter.project_slug}}.rtfd.io"
@@ -61,12 +72,4 @@ ignore = ["S101"]
 convention= 'google'
 
 [tool.uv]
-upgrade-package = ["jax", "jaxlib", "flax"]
-dev-dependencies = [
-    "gitlint",
-    "jupyter",
-    "pre-commit",
-    "pytest>=7.2.0",
-    "pytest-cov>=4.0.0",
-    "ruff",
-]
+upgrade-package = ["jax-ai-stack"]
